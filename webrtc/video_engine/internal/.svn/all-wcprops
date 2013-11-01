@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4802/trunk/webrtc/video_engine/internal
+END
+call.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4802/trunk/webrtc/video_engine/internal/call.cc
+END
+video_send_stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/4774/trunk/webrtc/video_engine/internal/video_send_stream.h
+END
+transport_adapter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4774/trunk/webrtc/video_engine/internal/transport_adapter.cc
+END
+call.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4774/trunk/webrtc/video_engine/internal/call.h
+END
+transport_adapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/4774/trunk/webrtc/video_engine/internal/transport_adapter.h
+END
+video_receive_stream.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4774/trunk/webrtc/video_engine/internal/video_receive_stream.cc
+END
+video_receive_stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/4774/trunk/webrtc/video_engine/internal/video_receive_stream.h
+END
+video_send_stream.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4802/trunk/webrtc/video_engine/internal/video_send_stream.cc
+END

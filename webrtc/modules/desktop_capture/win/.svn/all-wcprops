@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4685/trunk/webrtc/modules/desktop_capture/win
+END
+desktop.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4175/trunk/webrtc/modules/desktop_capture/win/desktop.h
+END
+cursor_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4210/trunk/webrtc/modules/desktop_capture/win/cursor_unittest.cc
+END
+scoped_thread_desktop.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4175/trunk/webrtc/modules/desktop_capture/win/scoped_thread_desktop.cc
+END
+cursor.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4685/trunk/webrtc/modules/desktop_capture/win/cursor.cc
+END
+scoped_thread_desktop.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4175/trunk/webrtc/modules/desktop_capture/win/scoped_thread_desktop.h
+END
+cursor.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4210/trunk/webrtc/modules/desktop_capture/win/cursor.h
+END
+cursor_unittest_resources.rc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4210/trunk/webrtc/modules/desktop_capture/win/cursor_unittest_resources.rc
+END
+scoped_gdi_object.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4210/trunk/webrtc/modules/desktop_capture/win/scoped_gdi_object.h
+END
+cursor_unittest_resources.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4210/trunk/webrtc/modules/desktop_capture/win/cursor_unittest_resources.h
+END
+desktop.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4175/trunk/webrtc/modules/desktop_capture/win/desktop.cc
+END

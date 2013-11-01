@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/4885/trunk/webrtc/modules
+END
+module_common_types_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3833/trunk/webrtc/modules/module_common_types_unittest.cc
+END
+modules.gyp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/4857/trunk/webrtc/modules/modules.gyp
+END
+modules_java.gyp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4284/trunk/webrtc/modules/modules_java.gyp
+END
+modules_tests.isolate
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4627/trunk/webrtc/modules/modules_tests.isolate
+END
+modules_unittests.isolate
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4627/trunk/webrtc/modules/modules_unittests.isolate
+END
+modules_java_chromium.gyp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4305/trunk/webrtc/modules/modules_java_chromium.gyp
+END

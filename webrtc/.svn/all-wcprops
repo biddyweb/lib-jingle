@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/4885/trunk/webrtc
+END
+README.chromium
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2963/trunk/webrtc/README.chromium
+END
+PRESUBMIT.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4381/trunk/webrtc/PRESUBMIT.py
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2963/trunk/webrtc/LICENSE
+END
+common_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4711/trunk/webrtc/common_types.h
+END
+webrtc.gyp
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4385/trunk/webrtc/webrtc.gyp
+END
+engine_configurations.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4770/trunk/webrtc/engine_configurations.h
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3334/trunk/webrtc/.gitignore
+END
+typedefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3980/trunk/webrtc/typedefs.h
+END
+LICENSE_THIRD_PARTY
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3959/trunk/webrtc/LICENSE_THIRD_PARTY
+END
+common_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4271/trunk/webrtc/common_unittest.cc
+END
+PATENTS
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2963/trunk/webrtc/PATENTS
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4400/trunk/webrtc/common.h
+END
