@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4574/trunk/third_party/gflags/gen/posix/include/gflags
+END
+gflags_completions.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4574/trunk/third_party/gflags/gen/posix/include/gflags/gflags_completions.h
+END
+gflags.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4574/trunk/third_party/gflags/gen/posix/include/gflags/gflags.h
+END

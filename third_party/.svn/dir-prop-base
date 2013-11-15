@@ -1,0 +1,35 @@
+K 10
+svn:ignore
+V 278
+WebKit
+android_testrunner
+android_tools
+asan
+cygwin
+directxsdk
+expat
+gold
+google-gflags
+icu
+jsoncpp
+jsoncpp/source
+junit
+libjpeg
+libjpeg_turbo
+libsrtp
+libvpx
+libvpx-internal
+libyuv
+llvm
+llvm-build
+nss
+openssl
+opus
+protobuf
+sqlite
+valgrind
+winsdk_samples
+winsdk_samples/src
+yasm
+
+END

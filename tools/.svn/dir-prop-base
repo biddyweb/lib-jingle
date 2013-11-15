@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 65
+clang
+gyp
+protoc
+protoc_wrapper
+python
+swarm_client
+valgrind
+win
+
+END
