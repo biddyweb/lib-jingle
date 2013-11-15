@@ -44,7 +44,7 @@ class VideoRenderFrames {
   // 10 seconds for 30 fps.
   enum { KMaxNumberOfFrames = 300 };
   // Don't render frames with timestamp older than 500ms from now.
-  enum { KOldRenderTimestampMS = 500 };
+  enum { KOldRenderTimestampMS = 50000 };
   // Don't render frames with timestamp more than 10s into the future.
   enum { KFutureRenderTimestampMS = 10000 };
 

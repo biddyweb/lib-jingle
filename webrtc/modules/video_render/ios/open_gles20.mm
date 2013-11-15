@@ -59,12 +59,12 @@ OpenGles20::OpenGles20() : texture_width_(-1), texture_height_(-1) {
 
   program_ = 0;
 
-  const GLfloat vertices[20] = {
-      // X, Y, Z, U, V
-      -1, -1, 0, 0, 0,   // Bottom Left
-      1,  -1, 0, 0, 1,   // Bottom Right
-      1,  1,  0, 1, 1,   // Top Right
-      -1, 1,  0, 1, 0};  // Top Left
+    const GLfloat vertices[20] = {
+        // X, Y, Z, U, V
+        -1, -1, 0, 0, 0,   // Bottom Left
+        1,  -1, 0, 1, 0,   // Bottom Right
+        1,  1,  0, 1, 1,   // Top Right
+        -1, 1,  0, 0, 1};  // Top Left
 
   memcpy(vertices_, vertices, sizeof(vertices_));
 }

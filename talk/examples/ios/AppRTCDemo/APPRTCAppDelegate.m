@@ -253,8 +253,8 @@
     _videoTrack = [self.peerConnectionFactory videoTrackWithID:@"ARDAMSv0" source:_videoSource];
     [self displayLogMessage:[NSString stringWithFormat:@"\n\n********\nVIDEO TRACK\n%@\n********\n\n.", _videoTrack]];
     
-    self.renderer = [RTCVideoRenderer videoRenderGUIWithFrame:self.window.frame forEndpointWithId:0];
-    [_videoTrack addRenderer:[RTCVideoRenderer videoRenderGUIWithFrame:self.window.frame forEndpointWithId:0]];
+//    self.renderer = [RTCVideoRenderer videoRenderGUIWithFrame:self.window.frame forEndpointWithId:0];
+//    [_videoTrack addRenderer:[RTCVideoRenderer videoRenderGUIWithFrame:self.window.frame forEndpointWithId:0]];
     
     BOOL addedVideoTrack = [lms addVideoTrack:_videoTrack];
     [self displayLogMessage:[NSString stringWithFormat:@"Did we add the video track: %i", addedVideoTrack]];

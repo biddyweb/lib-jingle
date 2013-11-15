@@ -170,6 +170,8 @@ using namespace webrtc::videocapturemodule;
 
   [connection setVideoMinFrameDuration:cm_time];
   [connection setVideoMaxFrameDuration:cm_time];
+    
+  connection.videoOrientation = AVCaptureVideoOrientationPortrait;
 
   // finished configuring, commit settings to AVCaptureSession.
   [_captureSession commitConfiguration];

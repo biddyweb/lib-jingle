@@ -55,8 +55,6 @@ public:
 
     virtual void RenderFrame(const cricket::VideoFrame* frame) {
         
-        printf("Renderer asked to render frame");
-        
         assert(callback_ != NULL);
         
         //Make this into an I420VideoFrame
@@ -79,10 +77,7 @@ public:
         
         i420Frame->set_render_time_ms(frame->GetTimeStamp() / 1000000);
         
-        printf("Callback should render frame");
-
         callback_->RenderFrame(streamId_, *i420Frame);
-        printf("Got past the render frame call");
         
         delete i420Frame;
     }
@@ -96,20 +91,20 @@ private:
 
 webrtc::VideoRendererInterface *_videoRenderer;
 
-+ (RTCVideoRenderer *)videoRenderGUIWithFrame:(CGRect)frame forEndpointWithId:(NSInteger)endpointId {
-  // TODO (hughv): Implement.
++ (UIView *) renderViewWithFrame:(CGRect)frame {
     
-    // Create a VideoRenderIosView with the given frame
     VideoRenderIosView *renderView = [[VideoRenderIosView alloc] initWithFrame:frame];
-    [renderView setBackgroundColor:[UIColor redColor]];
-    [[[[UIApplication sharedApplication] delegate] window] addSubview:renderView];
+    [renderView setBackgroundColor:[UIColor blackColor]];
+    
+    return renderView;
+    
+}
+
++ (RTCVideoRenderer *)videoRenderInView:(UIView *)renderView forEndpointWithId:(NSInteger)endpointId {
     
     // Create a render module
     webrtc::VideoRender *renderModule = webrtc::VideoRender::CreateVideoRender(endpointId, (void*)CFBridgingRetain(renderView), false, webrtc::kRenderiOS);
-    
-//    NSLog(@"Did we make a renderModule?");
     assert(renderModule != NULL);
-//    NSLog(@"We did!");
     
     const int streamId0 = endpointId;
     webrtc::VideoRenderCallback *renderCallback = renderModule->AddIncomingRenderStream(streamId0, endpointId, 0.0f, 0.0f, 1.0f, 1.0f);
@@ -121,40 +116,12 @@ webrtc::VideoRendererInterface *_videoRenderer;
     
     // Create a new VideoRendererInterface
     webrtc::VideoRendererInterface* interface = new CallbackConverter(renderCallback, endpointId);
-
-//    NSLog(@"Did we make a render interface?");
     assert(interface != NULL);
-//    NSLog(@"We did!");
-    
-    if (renderModule->AddExternalRenderCallback(streamId0, renderCallback) == -1) {
-        printf("Error adding external render callback");
-    }
 
     // Init an instance of RTCVideoRenderer with the video render interface
     RTCVideoRenderer *renderer = [[RTCVideoRenderer alloc] initWithVideoRenderer:interface];
 
     return renderer;
-    
-    
-    
-//    NSLog(@"Should create video render gui with frame: %@", NSStringFromCGRect(frame));
-//    
-//    // Create a video render module for iOS
-//    // leftover: webrtc::VideoRendererInterface video renderer
-//    webrtc::VideoRender *nativeRenderer = webrtc::VideoRender::CreateVideoRender(1, (__bridge void *)[[[UIApplication sharedApplication] delegate] window], YES, webrtc::kRenderDefault);
-//    
-//    NSLog(@"Did we make a render interface?");
-//    assert(nativeRenderer != NULL);
-//    NSLog(@"We did!");
-//    
-//    // Create a video render callback
-//    webrtc::VideoRenderIosChannel
-    
-    // Init an instance of RTCVIdeoRenderer with videoRenderer
-//    RTCVideoRenderer *renderer = [[RTCVideoRenderer alloc] initWithVideoRenderer:renderInterface];
-//    return renderer;
-
-//    return nil;
     
 }
 

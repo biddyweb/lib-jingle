@@ -131,6 +131,8 @@ int32_t IncomingVideoStream::RenderFrame(const uint32_t stream_id,
     num_frames_since_last_calculation_ = 0;
     last_rate_calculation_time_ms_ = now_ms;
   }
+    
+    video_frame.set_timestamp(0); // Why are remote frame timestamps HUGE and local ones are zero?
 
   // Insert frame.
   CriticalSectionScoped csB(&buffer_critsect_);
@@ -340,22 +342,17 @@ bool IncomingVideoStream::IncomingVideoStreamProcess() {
     }
 
     // Send frame for rendering.
-//      printf("Send frame for rendering\n");
     if (external_callback_) {
-        printf("An external callback exists\n");
       WEBRTC_TRACE(kTraceStream, kTraceVideoRenderer, module_id_,
                    "%s: executing external renderer callback to deliver frame",
                    __FUNCTION__, frame_to_render->render_time_ms());
       external_callback_->RenderFrame(stream_id_, *frame_to_render);
     } else {
-//        printf("There is no external callback\n");
       if (render_callback_) {
-//          printf("A render callback exists\n");
         WEBRTC_TRACE(kTraceStream, kTraceVideoRenderer, module_id_,
                      "%s: Render frame, time: ", __FUNCTION__,
                      frame_to_render->render_time_ms());
-        render_callback_->RenderFrame(stream_id_, *frame_to_render); // Why is render_callback the external implementation
-                                                                    // I thought we set it to be the iOS Gles 20 channel
+        render_callback_->RenderFrame(stream_id_, *frame_to_render);
       }
     }
 

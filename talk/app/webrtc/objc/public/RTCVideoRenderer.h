@@ -26,6 +26,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol RTCVideoRendererDelegate;
 struct CGRect;
@@ -40,7 +41,10 @@ struct CGRect;
 
 // A convenience method to create a renderer and window and render frames into
 // that window.
-+ (RTCVideoRenderer *)videoRenderGUIWithFrame:(CGRect)frame forEndpointWithId:(NSInteger)endpointId;
+
++ (UIView *) renderViewWithFrame:(CGRect)frame;
+
++ (RTCVideoRenderer *)videoRenderInView:(UIView *)renderView forEndpointWithId:(NSInteger)endpointId;
 
 // Initialize the renderer.  Requires a delegate which does the actual drawing
 // of frames.
